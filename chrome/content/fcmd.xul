@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<dialog style="margin: auto; margin: 1em;" class="chromeclass-toolbar" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="TWB_NCMD" title="Reload onLOAD" ondialogaccept="return onOK();" ondialogcancel="return onCancel();" onload="onLoad();" persist="width height screenX screenY" windowtype="myDialogWindowType">
+	<script type="application/javascript" src="chrome://twbdialer/content/fcmd.js">
+	</script>
+	<menupopup id="vils">
+	</menupopup>
+	<vbox flex="1" style="overflow:auto">
+		<grid>
+			<columns>
+				<column />
+				<column />
+				<column />
+				<column />
+				<column />
+				<column />
+				<column />
+			</columns>
+			<rows id='params'>
+				<row>
+					<label value="" />
+				</row>
+				<row>
+					<label value="" />
+					<hbox><label value="" /><label id="randx" value="" /></hbox>
+					<hbox><checkbox id="rand" checked="false" /></hbox>
+					<hbox><label id="ffat" value="" /><textbox id="fattacks" size="3" value=""/></hbox>
+					<hbox><label id="ffsp" value="" /><textbox id="fsupports" size="3" value=""/></hbox>
+					<hbox><label value="" /><label value="" /></hbox>
+					<label value="" />
+				</row>
+				<row>
+					<label value="" />
+				</row>
+				<row>
+					<label value="" />
+					<hbox><image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_spear.png'/><image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_sword.png'/></hbox>
+					<hbox><image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_axe.png'/><image id="img_archer" style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_archer.png'/></hbox>
+					<hbox><image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_spy.png'/><image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_light.png'/></hbox>
+					<hbox><image id="img_marcher" style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_marcher.png'/><image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_heavy.png'/></hbox>
+					<hbox><image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_ram.png'/><image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_catapult.png'/></hbox>
+					<label value="" />
+				</row>
+				<row>
+					<label value="" />
+					<hbox><textbox id="spear_" disabled="true" size="6" value=""/><textbox id="sword_" disabled="true" size="6" value=""/></hbox>
+					<hbox><textbox id="axe_" disabled="true" size="6" value=""/><textbox id="archer_" disabled="true" size="6" value=""/></hbox>
+					<hbox><textbox id="spy_" disabled="true" size="6" value=""/><textbox id="light_" disabled="true" size="6" value=""/></hbox>
+					<hbox><textbox id="marcher_" disabled="true" size="6" value=""/><textbox id="heavy_" disabled="true" size="6" value=""/></hbox>
+					<hbox><textbox id="ram_" disabled="true" size="6" value=""/><textbox id="catapult_" disabled="true" size="6" value=""/></hbox>
+					<label value="" />
+				</row>
+				<row>
+					<label value="" />
+					<hbox><textbox id="spear" size="6" value=""/><textbox id="sword" size="6" value=""/></hbox>
+					<hbox><textbox id="axe" size="6" value=""/><textbox id="archer" size="6" value=""/></hbox>
+					<hbox><textbox id="spy" size="6" value=""/><textbox id="light" size="6" value=""/></hbox>
+					<hbox><textbox id="marcher" size="6" value=""/><textbox id="heavy" size="6" value=""/></hbox>
+					<hbox><textbox id="ram" size="6" value=""/><textbox id="catapult" size="6" value=""/></hbox>
+					<label value="" />
+				</row>
+				<row>
+					<label value="" />
+				</row>
+				<row>
+					<label value="" />
+					<label value="" />
+					<hbox><label id="frp" value="" /><button label="+" oncommand="addx1(this)"/></hbox>
+					<label value="" />
+					<hbox><label id="trp" value="" /><button label="+" oncommand="addx2(this)"/></hbox>
+					<label value="" />
+					<label value="" />
+				</row>
+			</rows>
+		</grid>
+	</vbox>
+</dialog>

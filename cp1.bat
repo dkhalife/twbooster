@@ -1,0 +1,1 @@
+xcopy "I:\Documents\TWB\chrome\content" "C:\Users\Dan\AppData\Roaming\Mozilla\Firefox\Profiles\xmlwrda4.default\extensions\twdialer@fbgames.web44.net\chrome\content" /Y /E

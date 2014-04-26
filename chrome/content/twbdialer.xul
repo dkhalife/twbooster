@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://twbdialer/skin/default/skin.css" type="text/css"?>
+<overlay id="TWB-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://twbdialer/content/twbdialer.js">
+	</script>
+	<toolbox id="navigator-toolbox">
+		<toolbar id="TWB-Toolbar" toolbarname="Tribal Wars Booster" class="chromeclass-toolbar" context="toolbar-context-menu" hidden="false" persist="hidden">
+				<toolbarbutton id="TWB-Light" type="button" oncommand="try{twb_.lib.TWB_VLD();}catch(e){twb_.lib.log(1,1,e);}" tooltiptext="TWB Status">
+				</toolbarbutton>
+				<toolbarbutton id="TWB-MainMenu" type="menu" tooltiptext="Main Menu">
+					<menupopup>
+						<menu label="Change Server">
+							<menupopup id="TWB-SubMenu">
+							</menupopup>
+						</menu>
+						<menuseparator />
+						<menuitem label="TWB CPanel" oncommand="try{twb_.lib.TWB_Server('cpanel');}catch(e){twb_.lib.log(1,1,e);}" />
+						<menuitem label="TWB Plugin Manager" oncommand="try{twb_.lib.TWB_Server('pmanager');}catch(e){twb_.lib.log(1,1,e);}" />
+						<menuitem label="TWB Forum" oncommand="try{twb_.lib.TWB_Server('forum');}catch(e){twb_.lib.log(1,1,e);}" />
+						<menuitem label="TWBWiki" oncommand="try{twb_.lib.TWB_Server('wiki');}catch(e){twb_.lib.log(1,1,e);}" />
+						<menuitem label="TW Stats" oncommand="try{twb_.lib.TWB_All_Url('','0','1');}catch(e){twb_.lib.log(1,1,e);}" />
+						<menuitem label="TW Claimer" oncommand="try{twb_.lib.TWB_All_Url('http://www.twclaimer.com/','1','1');}catch(e){twb_.lib.log(1,1,e);}" />
+						<menuitem label="Attack Planner" oncommand="try{twb_.lib.TWB_All_Url('http://www.twmentor.com/?tool=attack','1','1');}catch(e){twb_.lib.log(1,1,e);}" />
+						<menuitem label="TW Report" oncommand="try{twb_.lib.TWB_All_Url('http://www.tw-report.net','1','1');}catch(e){twb_.lib.log(1,1,e);}" />
+						<menuitem label="Report Converter" oncommand="try{twb_.lib.TWB_All_Url('http://www.mytwstats.com/tool-convert.php','1','1');}catch(e){twb_.lib.log(1,1,e);}" />
+						<menuitem label="Farm Finder" oncommand="try{twb_.lib.TWB_All_Url('http://www.twmentor.com/?tool=finder','1','1');}catch(e){twb_.lib.log(1,1,e);}" />
+					</menupopup>
+				</toolbarbutton>
+				<toolbarbutton id="TWB-Icons" type="menu" hidden="true">
+					<menupopup id="TWB-Icos">
+					</menupopup>
+				</toolbarbutton>
+				<toolbarbutton id="TWB-Map" type="button" tooltiptext="Map" oncommand="try{twb_.lib.TWB_GoTo('map');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Overviews" type="button" tooltiptext="Overviews" oncommand="try{twb_.lib.TWB_GoTo('overview_villages');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Overview" type="button" tooltiptext="Overview" oncommand="try{twb_.lib.TWB_GoTo('overview');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Main" type="button" tooltiptext="HQ" oncommand="try{twb_.lib.TWB_GoTo('main');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Barracks" type="button" tooltiptext="Barracks" oncommand="try{twb_.lib.TWB_GoTo('barracks');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Stable" type="button" tooltiptext="Stable" oncommand="try{twb_.lib.TWB_GoTo('stable');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Workshop" type="button" tooltiptext="Workshop" oncommand="try{twb_.lib.TWB_GoTo('garage');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Smithy" type="button" tooltiptext="Smithy" oncommand="try{twb_.lib.TWB_GoTo('smith');}catch(e){twb_.lib.log(1,1,e);}" />				<toolbarbutton id="TWB-Snob" type="button" tooltiptext="Academy" oncommand="try{twb_.lib.TWB_GoTo('snob');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Place" type="button" tooltiptext="Rally Point" oncommand="try{twb_.lib.TWB_GoTo('place','command');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Statue" type="button" tooltiptext="Statue" oncommand="try{twb_.lib.TWB_GoTo('statue');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton id="TWB-Market" type="button" tooltiptext="Market" oncommand="try{twb_.lib.TWB_GoTo('market');}catch(e){twb_.lib.log(1,1,e);}" />
+				<toolbarbutton hidden="true" disabled="true">
+					<browser type="content" id="TWB-Root-Win" src="about:blank" flex="1"/>
+				</toolbarbutton>
+		</toolbar>		
+	</toolbox>
+	<stringbundleset>
+		<stringbundle id="TWB-Language" src="chrome://twbdialer/locale/twbdialer.properties"/>
+	</stringbundleset>
+</overlay>

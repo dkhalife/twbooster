@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://twbdialer/skin/settings.css" type="text/css"?>
+<dialog style="margin: auto; margin: 1em;" onload="onLoad();" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="TWB_SETX" title="Reload onLOAD" ondialogaccept="return onOK();" persist="width height screenX screenY">
+	<vbox flex="1">
+		<groupbox style="overflow:auto" flex="1">
+			<tabbox selectedIndex="1" orient="horizontal" flex="1">
+				<tabs id="tabs" orient="vertical" class="tabs-left" flex="1">
+				</tabs>
+				<tabpanels id="panels" orient="vertical" flex="3">
+				</tabpanels>
+			</tabbox>
+		</groupbox>
+	</vbox>
+	<script type="application/javascript" src="settings.js">
+	</script>
+</dialog>

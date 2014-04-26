@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<dialog style="margin: auto; margin: 1em;" class="chromeclass-toolbar" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="TWB_UCMD" title="Reload onLOAD" ondialogaccept="return onOK();" ondialogcancel="return onCancel();" onload="onLoad();" persist="width height screenX screenY" windowtype="myDialogWindowType">
+	<script type="application/javascript" src="chrome://twbdialer/content/gcmd.js">
+	</script>
+	<grid>
+		<columns>
+			<column />
+			<column />
+			<column />
+			<column />
+		</columns>
+		<rows id='params'>
+		</rows>
+	</grid>
+</dialog>

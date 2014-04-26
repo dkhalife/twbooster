@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<dialog style="margin: auto; margin: 1em;" class="chromeclass-toolbar" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="TWB_NCMD" title="Reload onLOAD" ondialogaccept="return onOK();" ondialogcancel="return onCancel();" onload="onLoad();" persist="width height screenX screenY" windowtype="myDialogWindowType">
+	<script type="application/javascript" src="chrome://twbdialer/content/ncmd.js">
+	</script>
+	<menupopup id="vils">
+	</menupopup>
+	<vbox flex="1" style="overflow:auto">
+		<label style="display:none" value="" id="showarcher" />
+		<label style="display:none" value="" id="showknight" />
+		<groupbox>
+			<caption id="ascap" label="" />
+			<hbox align="center">
+				<label style="width:6em; text-align: right" value="x :" />
+				<textbox id="targetx" size="3" onkeyup="xSplit(this.value);" value="" />
+				<label style="width:1em; text-align: right" value="y :" />
+				<textbox id="targety" size="3" value="" />
+				<label style="width:6em; text-align: right" id="timx" value="" />
+				<menulist id="type" selectedIndex="0">
+					<menupopup>
+						<menuitem value="0" id='fo1' label="" />
+						<menuitem value="1" id='fo2' label="" />
+				</menupopup>
+				</menulist>
+				<textbox id="arrive" onclick="this.value=window.opener.twb_.lib.TWB_DCMD(lang('narriv'),'local');" size="17" value=""/>
+				<label style="width:5em; text-align: right" id="delayx" value="" />
+				<textbox id="delay" size="3" value=""/>
+			</hbox>
+			<grid>
+				<columns style="width: 2em">
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+				</columns>
+				<rows id='params'>
+					<row style="height: 6px"></row>
+					<row align="center">
+						<label value="" />
+						<label value="" id="" />
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_spear.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_sword.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_axe.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image id="img_archer" style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_archer.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_spy.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_light.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image id="img_marcher" style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_marcher.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_heavy.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_ram.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="60px" align="center">
+							<spacer flex="1" />
+							<image style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_catapult.png'/>
+							<spacer flex="1" />
+						</box>
+						<box />
+						<box width="18px" align="center">
+							<spacer flex="1" />
+							<image style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_snob.png'/>
+							<spacer flex="1" />
+						</box>
+						<box width="18px" align="center">
+							<spacer flex="1" />
+							<image id="img_knight" style="width: 18px; height: 18px;" src='http://en4.tribalwars.net/graphic/unit/unit_knight.png'/>
+							<spacer flex="1" />
+						</box>
+						<label id="sulab" value="" />
+						<button label="+" width="10px" oncommand="addx(this)"/>
+					</row>
+					<row>
+						<label value="#" />
+						<label value="From" />
+						<textbox id="spear_" disabled="true" size="3" value=""/>
+						<textbox id="sword_" disabled="true" size="3" value=""/>
+						<textbox id="axe_" disabled="true" size="3" value=""/>
+						<textbox id="archer_" disabled="true" size="3" value=""/>
+						<textbox id="spy_" disabled="true" size="3" value=""/>
+						<textbox id="light_" disabled="true" size="3" value=""/>
+						<textbox id="marcher_" disabled="true" size="3" value=""/>
+						<textbox id="heavy_" disabled="true" size="3" value=""/>
+						<textbox id="ram_" disabled="true" size="3" value=""/>
+						<textbox id="catapult_" disabled="true" size="3" value=""/>
+						<label value="" id="cattar" />
+						<textbox id="snob_" disabled="true" size="1" value=""/>
+						<textbox id="knight_" disabled="true" size="1" value=""/>
+						<label value="" />
+						<label value="" />
+					</row>
+				</rows>
+			</grid>
+		</groupbox>
+	</vbox>
+</dialog>

@@ -1,0 +1,18 @@
+content twbdialer chrome/content/
+overlay chrome://browser/content/browser.xul chrome://twbdialer/content/twbdialer.xul
+skin twbdialer classic/1.0 chrome/skin/
+
+locale twbdialer ar-AE chrome/locale/ar-AE/
+locale twbdialer da-DK chrome/locale/da-DK/
+locale twbdialer de-DE chrome/locale/de-DE/
+locale twbdialer en-US chrome/locale/en-US/
+locale twbdialer es-ES chrome/locale/es-ES/
+locale twbdialer fi-FI chrome/locale/fi-FI/
+locale twbdialer fr-FR chrome/locale/fr-FR/
+locale twbdialer hu-HU chrome/locale/hu-HU/
+locale twbdialer nl-NL chrome/locale/nl-NL/
+locale twbdialer no-NB chrome/locale/no-NB/
+locale twbdialer pl-PL chrome/locale/pl-PL/
+locale twbdialer pt-BR chrome/locale/pt-BR/
+locale twbdialer ro-RO chrome/locale/ro-RO/
+locale twbdialer sv-SE chrome/locale/sv-SE/

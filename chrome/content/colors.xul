@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<dialog style="margin: auto; margin: 1em;" onload="onLoad();" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="TWB_DTIME" title="Reload onLOAD" ondialogcancel="return onCancel();" ondialogaccept="return onOK();" persist="width height screenX screenY" windowtype="myDialogWindowType">
+	<vbox class="main">
+		<grid>
+			<columns>
+				<column/>
+				<column/>
+				<column/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<image style="width: 32px; height: 32px" src="chrome://twbdialer/skin/default/dots/1.png" />
+					<image style="width: 32px; height: 32px" src="chrome://twbdialer/skin/default/dots/2.png" />
+					<image style="width: 32px; height: 32px" src="chrome://twbdialer/skin/default/dots/3.png" />
+					<image style="width: 32px; height: 32px" src="chrome://twbdialer/skin/default/dots/4.png" />
+				</row>
+				<row>
+					<image style="width: 32px; height: 32px" src="chrome://twbdialer/skin/default/dots/5.png" />
+					<image style="width: 32px; height: 32px" src="chrome://twbdialer/skin/default/dots/6.png" />
+					<image style="width: 32px; height: 32px" src="chrome://twbdialer/skin/default/dots/7.png" />
+					<image style="width: 32px; height: 32px" src="chrome://twbdialer/skin/default/dots/8.png" />
+				</row>
+			</rows>
+		</grid>
+		<script type="application/javascript" src="chrome://twbdialer/content/colors.js" />
+	</vbox>
+</dialog>

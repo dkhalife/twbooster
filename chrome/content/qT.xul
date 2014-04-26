@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<dialog style="margin: auto; margin: 1em;" class="chromeclass-toolbar" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="TWB_UCMD" title="Reload onLOAD" ondialogaccept="return onOK();" ondialogcancel="return onCancel();" onload="onLoad();" persist="width height screenX screenY" windowtype="myDialogWindowType">
+	<script type="application/javascript" src="chrome://twbdialer/content/qT.js">
+	</script>
+	<grid>
+		<columns>
+			<column />
+			<column />
+			<column />
+			<column />
+			<column />
+			<column />
+			<column />
+			<column />
+			<column />
+			<column />
+			<column />
+			<column />
+		</columns>
+		<rows id='params'>
+			<row>
+				<hbox />
+				<hbox />
+				<hbox />
+				<image id="back" style="padding: 0em 2em 0em 2em;" src='chrome://twbdialer/skin/default/back.png'/>
+				<hbox />
+				<hbox />
+				<label align="center" id="villages" value="" />
+				<hbox />
+				<hbox />
+				<image id="next"  style="padding: 0em 2em 0em 2em;" src='chrome://twbdialer/skin/default/next.png'/>
+				<hbox />
+				<hbox />
+			</row>
+			<row>
+				<label id="units" value="" />
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_spear.png'/>
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_sword.png'/>
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_axe.png'/>
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_archer.png'/>
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_spy.png'/>
+				<toolbarbutton id="vil" type="menu" editable="false" sizetopopup="always">
+					<menupopup id="vil_" />
+				</toolbarbutton>
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_light.png'/>
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_marcher.png'/>
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_heavy.png'/>
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_ram.png'/>
+				<image style="padding: 0em 2em 0em 2em;" src='http://en4.tribalwars.net/graphic/unit/unit_catapult.png'/>
+			</row>
+			<row>
+				<label id="now" value="" />
+				<label id="_spear" value=""/>
+				<label id="_sword" value=""/>
+				<label id="_axe" value=""/>
+				<label id="_archer" value=""/>
+				<label id="_spy" value=""/>
+				<hbox></hbox>
+				<label id="_light" value=""/>
+				<label id="_marcher" value=""/>
+				<label id="_heavy" value=""/>
+				<label id="_ram" value=""/>
+				<label id="_catapult" value=""/>
+			</row>
+			<row>
+				<label id="max" value="" />
+				<label id="spear_" value=""/>
+				<label id="sword_" value=""/>
+				<label id="axe_" value=""/>
+				<label id="archer_" value=""/>
+				<label id="spy_" value=""/>
+				<hbox></hbox>
+				<label id="light_" value=""/>
+				<label id="marcher_" value=""/>
+				<label id="heavy_" value=""/>
+				<label id="ram_" value=""/>
+				<label id="catapult_" value=""/>
+			</row>
+			<row>
+				<label id="train" value="" />
+				<textbox id="spear" size="3" value=""/>
+				<textbox id="sword" size="3" value=""/>
+				<textbox id="axe" size="3" value=""/>
+				<textbox id="archer" size="3" value=""/>
+				<textbox id="spy" size="3" value=""/>
+				<button id="train_" label="" oncommand="qtrain();"/>
+				<textbox id="light" size="3" value=""/>
+				<textbox id="marcher" size="3" value=""/>
+				<textbox id="heavy" size="3" value=""/>
+				<textbox id="ram" size="3" value=""/>
+				<textbox id="catapult" size="3" value=""/>
+			</row>
+			<hbox id="upda" hidden="true"><label id="load" value=""/><image style="padding: 0em 2em 0em 2em;" src='chrome://twbdialer/skin/default/load.gif'/></hbox>
+		</rows>
+	</grid>
+</dialog>

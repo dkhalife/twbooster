@@ -1,0 +1,45 @@
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window id="TWB_Dialog" title=""
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    onload="onLoad(window.arguments);"
+    hidechrome="true">
+	<groupbox id="meter" hidden="true">
+		<html:div id="TWB-Meters" style="background-color: #665544">
+			<groupbox>
+				<caption id="TWB-MLabel" label="" />
+				<label id="TWB-MLabel1" label="" />
+				<progressmeter id="TWB-Meters1" mode="determined" value="0" />
+				<label id="TWB-MLabel2" label="" />
+				<progressmeter id="TWB-Meters2" mode="determined" value="0" />
+				<html:p align="center" id="Cbtndiv" style="display:none">
+					<html:br />
+					<html:input type="button" id="CBUTTON" value="Cancel" />
+				</html:p>
+			</groupbox>
+		</html:div>
+	</groupbox>
+	
+	<groupbox id="notify" hidden="true">
+		<html:div id="TWB-Meters" style="background-color: #CADCEB">
+			<groupbox>
+				<caption id="TWB-NLabel" label="" />
+				<html:div style="padding: 0 10px;">
+					<html:div class="inner" style="color: #536482; font-family: Verdana,Helvetica,Arial,sans-serif; font-size: 12px;">
+						<html:span style="background-image: url(http://twbooster.com/phpBB3/styles/prosilver/theme/images/corners_left.png)"><html:span></html:span></html:span>
+						<html:b><html:span id="TWB_Msg">
+						</html:span></html:b>
+						<html:p align="center" id="btnsdiv" style="display:none">
+							<html:br />
+							<html:input type="button" style="display:none" value="" id="button1" />
+							<html:input type="button" style="display:none" value="" id="button2" />
+							<html:span style="background-image: url(http://twbooster.com/phpBB3/styles/prosilver/theme/images/corners_left.png)"><html:span></html:span></html:span>
+						</html:p>
+					</html:div>
+				</html:div>
+			</groupbox>
+		</html:div>
+	</groupbox>
+	
+	<script src="dialog.js" />
+</window>

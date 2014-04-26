@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<dialog style="margin: auto; margin: 1em;" onload="onLoad();" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="TWB_DTIME" title="Reload onLOAD" ondialogcancel="return onCancel();" ondialogaccept="return onOK();" persist="width height screenX screenY" windowtype="myDialogWindowType">
+	<vbox flex="1" class="main">
+		<grid flex="1">
+			<columns>
+				<column flex="1"/>
+			</columns>
+			<rows id='params'>
+				<datepicker type="grid" id="date" value=""/>
+				<spacer flex="1"/>
+				<timepicker id="time" value=""/>
+				<spacer flex="1"/>
+				<hbox>
+					<label id="l" value="" />
+					<checkbox id="loop" checked="false" />
+				</hbox>
+			</rows>
+		</grid>
+		<script type="application/javascript" src="chrome://twbdialer/content/dtime.js" />
+	</vbox>
+</dialog>
